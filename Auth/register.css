@@ -1,0 +1,107 @@
+body {
+  box-sizing: border-box;
+  background-color: #bbbbbb;
+  max-width: 100%;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  padding-top: 10%;
+}
+
+.form-container {
+  background-color: #f7f7f7;
+  width: 35%;
+  margin: auto;
+  padding: 20px 40px;
+}
+
+.form-container h2 {
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.form-container hr {
+  width: 40px;
+  height: 3px;
+  border: 0;
+  background-color: #6fbe44;
+  margin-left: 0px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.form-group input[name="name"],
+.form-group input[name="comp-name"],
+.form-group input[name="email"],
+.form-group input[name="phone"] {
+  width: 100%;
+  border: 0;
+  background-color: #ffffff;
+  height: 40px;
+}
+
+.form-group textarea[name="message"] {
+  width: 100%;
+  border: 0;
+  background-color: #ffffff;
+}
+
+.form-group input[name="name"]::placeholder,
+.form-group input[name="comp-name"]::placeholder,
+.form-group input[name="email"]::placeholder,
+.form-group input[name="phone"]::placeholder,
+.form-group textarea[name="message"]::placeholder {
+  color: #cecece;
+}
+
+.form-group input[name="name"]:focus,
+.form-group input[name="comp-name"]:focus,
+.form-group input[name="email"]:focus,
+.form-group input[name="phone"]:focus,
+.form-group textarea[name="message"]:focus {
+  outline: none;
+}
+
+button {
+  width: 100%;
+  background-color: #6fbe44;
+  border: 0;
+  padding: 15px 0;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding-top: 20%;
+  }
+  .form-container {
+    padding: 20px 30px;
+    width: 60%;
+  }
+  .form-container h2 {
+    font-size: 14px;
+  }
+  .form-container hr {
+    width: 25px;
+  }
+  button {
+    font-size: 12px;
+  }
+}

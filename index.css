@@ -1,0 +1,832 @@
+:root {
+  --sheading: 12px;
+  --mheading: 16px;
+  --lheading: 20px;
+  --xxlheading: 25px;
+  --xxxlheading: 35px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigator {
+  /* overflow: hidden; */
+  width: 100%;
+  height: 60px;
+  display: flex;
+  margin: auto;
+  border: 1px solid transparent;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  z-index: 60;
+}
+
+.logo-img-container {
+  justify-content: flex-start;
+  margin: auto;
+}
+.logo-img-container h4 {
+  color: #161616;
+}
+
+.menu-link {
+  display: flex;
+  margin: auto;
+}
+
+.menu-link li {
+  list-style-type: none;
+  margin: auto 15px;
+  color: #161616;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-link li a {
+  text-decoration: none;
+  color: #161616;
+}
+
+.header-search {
+  margin: auto;
+}
+
+.search-icon {
+  margin-right: 50px;
+  color: #6fbe44;
+  font-size: 20px;
+}
+.phone-icon {
+  font-size: 18px;
+}
+.header-search .fa-phone {
+  color: #ffffff;
+  background-color: #6fbe44;
+  font-size: 20px;
+  border: 1px solid #6fbe44;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.fa-angle-down {
+  color: #6fbe44;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Dropdown section................ */
+.resources-items {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: aqua;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.resources-items:hover .dropdown {
+  display: block;
+}
+
+/* Slider............... .............. 
+.....................
+*/
+.slider-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  margin: auto;
+}
+
+.slide-image .contents {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-left: 0;
+  width: 35%;
+  height: 600px;
+  color: #ffffff;
+  padding: 0px 50px 0px 100px;
+  z-index: 1;
+}
+.slide-image .contents h2 {
+  margin-top: 100px;
+  text-transform: uppercase;
+  font-size: var(--sheading);
+}
+.slide-image .contents hr {
+  background-color: #6fbe44;
+  color: #6fbe44;
+  width: 35px;
+  height: 4px;
+  border: 0;
+  margin-right: 10px;
+  margin-left: 0;
+}
+.slide-image .contents h3 {
+  font-size: var(--xxxlheading);
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.slide-image .contents p {
+  margin-top: 20px;
+}
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.button-div p {
+  margin-left: 50px;
+}
+.button-div p span {
+  background-color: #ffffff;
+  color: #282826;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 20px;
+}
+.button-div p a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: var(--lheading);
+  font-weight: bold;
+}
+.slide-image label span {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  font-size: 100px;
+  color: #ffffff;
+}
+
+.slide-image img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-size: cover;
+}
+
+#i1,
+#i2,
+#i3 {
+  display: none;
+}
+
+.prev,
+.next {
+  position: absolute;
+  width: 10%;
+  height: 600px;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 50;
+  cursor: pointer;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+
+.dots-container {
+  position: absolute;
+  width: 100%;
+  height: 11px;
+  text-align: left;
+  z-index: 50;
+  bottom: 10%;
+  margin: 0 0 0 100px;
+}
+.dots {
+  top: -5px;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.slide-image {
+  z-index: -1;
+}
+
+#i1:checked ~ #img1,
+#i2:checked ~ #img2,
+#i3:checked ~ #img3 {
+  z-index: 9;
+}
+
+#i1:checked ~ .dots-container #dot1,
+#i2:checked ~ .dots-container #dot2,
+#i3:checked ~ .dots-container #dot3 {
+  background: #6fbe44;
+}
+
+.services {
+  display: flex;
+  background-color: #000000;
+  max-width: 100%;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.services p {
+  font-size: 16px;
+  border-right: 1px solid #ffffff;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.services p:last-of-type {
+  border: 0;
+}
+
+.services p i {
+  font-size: 25px;
+}
+
+.services p span {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+/*
+**************** Map Section................................... 
+***********
+*/
+
+.map-section {
+  width: 100%;
+  margin: auto;
+  background-color: #f7f7f7;
+  display: flex;
+}
+
+.map-section .map img {
+  max-width: 100%;
+  height: auto;
+}
+
+.search-dealer {
+  margin: auto 100px;
+}
+.search-dealer .search-dealer-container h2 {
+  font-size: var(--xxxlheading);
+}
+
+.search-dealer .search-dealer-container .search-bar {
+  display: flex;
+  width: 100%;
+}
+
+.search-dealer .search-dealer-container .search-bar {
+  margin-top: 30px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+
+.search-dealer .search-dealer-container .search-bar input {
+  border: 0;
+  background-color: #ffffff;
+  height: 40px;
+  width: 100%;
+}
+
+.search-dealer .search-dealer-container .search-bar input::placeholder {
+  color: #cecece;
+  text-transform: capitalize;
+}
+
+.search-dealer .search-dealer-container p input:focus {
+  outline: none;
+}
+
+.search-dealer .search-dealer-container .search-bar .map-marker {
+  background-color: #ffffff;
+  margin: auto 0;
+  padding: 0 20px;
+}
+
+.search-bar .map-marker .fa-map-marker {
+  font-size: var(--lheading);
+  color: #55636b;
+}
+
+.search-dealer .search-dealer-container .search-bar .search-input {
+  background-color: #000000;
+  padding: 0 20px;
+  color: #ffffff;
+  margin: auto;
+  padding: 10px 10px;
+}
+
+.search-bar .search-input .fa-search {
+  font-size: var(--lheading);
+  cursor: pointer;
+  text-align: center;
+}
+
+/*
+***************
+*********************  Find your parts section............................
+*/
+.find-parts {
+  width: 100%;
+  display: flex;
+  margin: 10px auto;
+}
+
+.find-parts .parts-img img {
+  max-width: 500px;
+  height: 400px;
+}
+
+.find-parts .find-parts-contents {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.find-parts-contents .find-part-heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  display: flex;
+  flex-flow: column;
+}
+
+.find-parts-contents h3 {
+  font-size: var(--xxxlheading);
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+.find-parts-contents p {
+  margin-top: 20px;
+}
+
+.aBtn {
+  width: 40%;
+  background-color: #6fbe44;
+  border: 0;
+  padding: 15px 10px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+/*
+********
+******* FAQ Section........................... 
+*/
+
+.faqs {
+  width: 100%;
+  background-color: #f7f7f7;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.faqs h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: var(--xxxlheading);
+}
+
+.faqs .search-bar {
+  display: flex;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.faqs .search-bar input {
+  border: 0;
+  background-color: #ffffff;
+  height: 40px;
+  width: 100%;
+}
+
+.faqs .search-bar input::placeholder {
+  color: #cecece;
+  text-transform: capitalize;
+}
+.faqs .search-bar input:focus {
+  outline: none;
+}
+.faqs .search-bar .search-input {
+  background-color: #000000;
+  padding: 0 20px;
+  color: #ffffff;
+  margin: auto;
+  padding: 10px 10px;
+}
+
+.faqs .search-bar .search-input .fa-search {
+  font-size: var(--lheading);
+  cursor: pointer;
+  text-align: center;
+}
+
+.accordian {
+  width: 60%;
+  margin: 20px auto;
+}
+
+.accordian ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.accordian ul label {
+  display: block;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  font-weight: bold;
+  border-right: 5px solid #55636b;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+ul p {
+  padding: 10px;
+  background: #ffffff;
+  color: #000000;
+}
+
+.accordian input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.accordian input[type="checkbox"] ~ p {
+  height: 0;
+  transform: scaleY(0);
+  transition: transform 0.4s ease-in;
+}
+
+.accordian input[type="checkbox"]:checked ~ p {
+  height: 100%;
+  transform-origin: top;
+  transition: transform 0.4s ease-out;
+  transform: scaleY(1);
+}
+
+.accordian input[type="checkbox"]:checked + label {
+  border-right: 5px solid #6fbe44;
+}
+
+/*
+**********
+*********   Contact Now Section.............................  
+*/
+
+.contact-now {
+  background-image: url("./img/image-1.jpg");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-head {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+}
+
+.contact-head p {
+  color: #ffffff;
+  font-size: var(--lheading);
+  margin: auto;
+}
+.contact-head p span {
+  font-weight: bold;
+}
+.contact-head a {
+  margin: auto;
+}
+.contact-contents {
+  display: flex;
+}
+.contact-contents .contact-decor-image {
+  margin: auto;
+}
+.contact-contents .contact-decor-image img {
+  width: 500px;
+  height: 500px;
+}
+.contact-contents .content-list {
+  margin: auto 100px;
+}
+.content-list h2 {
+  color: #ffffff;
+  font-size: var(--xxlheading);
+}
+.content-list p {
+  color: #ffffff;
+  font-size: var(--mheading);
+}
+.contact-button {
+  margin-top: 50px;
+}
+.contact-button .requestCallback {
+  background-color: #55636b;
+  margin-left: 30px;
+}
+.attender-name {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.attender-name hr {
+  background-color: #6fbe44;
+  color: #6fbe44;
+  width: 5px;
+  height: 30px;
+  border: 0;
+  margin-right: 10px;
+  margin-left: 0;
+}
+.attender-name p span {
+  margin-right: 3px;
+}
+
+/*
+****
+******
+******** Footer Section....................................  
+*/
+.footer {
+  width: 100%;
+  display: flex;
+  margin: auto 50px;
+  padding-top: 50px;
+}
+.contactUs-sec {
+  margin: auto;
+}
+.contactUs-sec i {
+  color: #ffffff;
+  background-color: #6fbe44;
+  font-size: 10px;
+  border: 1px solid #6fbe44;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 10px;
+}
+.contactUs-sec img {
+  width: 600px;
+  height: 300px;
+}
+.footer-section-services {
+  display: flex;
+  margin: auto;
+}
+.footer-section-services:first-of-type {
+  margin-bottom: 50px;
+}
+.footer-section-services ul {
+  list-style: none;
+  margin-right: 30px;
+}
+.footer-section-services ul li {
+  margin: 10px auto;
+  text-transform: capitalize;
+}
+.footer-section-services ul li:first-of-type {
+  margin-bottom: 15px;
+  font-size: var(--lheading);
+  font-weight: bold;
+}
+.footer-section-services ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+/*
+********
+*********** Copyright Section..................................... 
+*/
+.copyright-section {
+  background-color: #000000;
+  width: 100%;
+  color: #ffffff;
+  text-align: right;
+  padding: 5px 0;
+}
+.copyright-section p {
+  margin-right: 100px;
+  font-size: 10px;
+}
+.copyright-section p span {
+  text-transform: uppercase;
+  font-size: var(--mheading);
+}
+/*****
+********    Media Queries...............................
+***********  
+*/
+@media (max-width: 768px) {
+  .map-section {
+    flex-direction: column;
+  }
+  /* Header Section....................... */
+  .menu-link {
+    display: none;
+  }
+  /* Slider Section................................. */
+  .services p {
+    font-size: 10px;
+    margin-left: 3px;
+    margin-right: 5px;
+    font-weight: normal;
+  }
+  .services p i {
+    font-size: 12px;
+  }
+  .services p span {
+    margin-right: 3px;
+    margin-left: 0px;
+  }
+  /* .slide-image .contents h2 {
+    margin-top: 150px;
+    font-size: var(--mheading);
+  }
+  .slide-image .contents hr {
+    width: 25px;
+  }
+  .slide-image .contents h3 {
+    font-size: var(--lheading);
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .slide-image .contents p {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .button-div {
+    display: flex;
+    margin-top: 40px;
+  }
+  .button-div p {
+    margin-left: 30px;
+  }
+  .dots-container {
+    text-align: center;
+    margin: auto;
+  } */
+  /* Map Section............................... */
+  .search-dealer {
+    margin: auto 30px;
+  }
+  .search-dealer .search-dealer-container h2 {
+    font-size: var(--xxlheading);
+  }
+  /* Find parts section....................... */
+  .find-parts {
+    flex-direction: column;
+  }
+  .find-parts .parts-img img {
+    width: 100%;
+  }
+  .find-parts-contents h3 {
+    font-size: 20px;
+  }
+  .find-parts-contents button {
+    font-size: 12px;
+    width: 60%;
+  }
+  .find-parts .find-parts-contents {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  /* FAQS Section........................... */
+  .faqs h2 {
+    font-size: var(--xxlheading);
+  }
+  .faqs .search-bar {
+    width: 60%;
+  }
+  .accordian {
+    width: 80%;
+  }
+  .aBtn {
+    font-size: 12px;
+    font-weight: normal;
+    width: 30%;
+  }
+  /* Contact now section.................... */
+  .contact-head {
+    padding: 5px 5px;
+  }
+  .contact-head p {
+    font-size: var(--mheading);
+  }
+  .contact-contents .contact-decor-image img {
+    display: none;
+  }
+  .content-list h2 {
+    font-size: var(--lheading);
+  }
+  .content-list p {
+    font-size: var(--mheading);
+  }
+  .contact-button {
+    display: flex;
+    margin-top: 30px;
+  }
+  .contact-contents .content-list {
+    margin: auto 20px;
+  }
+  .contact-button a {
+    width: 40%;
+  }
+  .attender-name {
+    margin-top: 15px;
+  }
+  /*
+******** Footer Section....................................  
+*/
+  .footer {
+    flex-direction: column;
+    margin: auto;
+  }
+  .contactUs-sec img {
+    max-width: 100%;
+    height: auto;
+  }
+  .footer-section-services:first-of-type {
+    margin-bottom: 10px;
+  }
+  /*
+********
+*********** Copyright Section..................................... 
+*/
+  .copyright-section {
+    text-align: center;
+  }
+  .copyright-section p {
+    margin: 2px auto;
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Register Page</title>
+</head>
+<body>
+    <div>
+        <div class="form-container">
+            <div class="heading">
+                <h2>Request Callback</h2>
+                <hr/>
+            </div>
+            <form onsubmit="">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" class="form-control" placeholder="John Blogg" required>
+                </div>
+                <div class="form-group">
+                    <label for="comp-name">Comapny Name</label>
+                    <input type="text" name="comp-name" class="form-control" placeholder="ABCD Inc" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" class="form-control" placeholder="john.blog@acme.com.au">
+                </div>
+                <div class="form-group">
+                    <label for="ph-no">Phone Number</label>
+                    <input type="number" name="phone" class="form-control" placeholder="0123456789" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea name="message" class="form-control" cols="30" rows="10" placeholder="Enter your message here"></textarea>
+                </div>
+                <button type="submit" class="btn">Request Callback</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

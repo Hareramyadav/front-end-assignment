@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>HomePage</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+                <nav role="navigation" class="navigator">
+                    <div class="logo-img-container">
+                        <!-- <img src="" alt="" class="img"> -->
+                        <h4>ABCD Logo</h4>
+                    </div>
+                    <ul class="menu-link">
+                        <li class="link-items">
+                            Horticulture
+                        </li>
+                        <li class="link-items">
+                            Viticulture
+                        </li>
+                        <li class="link-items">
+                            <a href="#">Parts</a>
+                        </li>
+                        <li class="link-items">
+                            <a href="#">Find a dealer</a>
+                        </li>
+                        <li class="link-items">
+                            <a href="#">Company</a>
+                        </li>
+                        <li class="resources-items">
+                            <span>Resources <i class="fa fa-angle-down"></i> </span>
+                            <div class="dropdown">
+                                <a href="#">Image Gallery</a>
+                                <a href="#">Video Gallery</a>
+                                <a href="#">Brochure & Manuals</a>
+                                <a href="#">Testimonials</a>
+                                <a href="#">FAQs</a>
+                                <a href="#">Latest News</a>
+                            </div>
+                        </li>
+                        <li class="link-items">
+                            <a href="#">Contact</a>
+                        </li>
+                        <span class="search-icon"><i class="fa fa-search"></i></span>
+                    </ul>
+                    <p class="header-search">
+                        <span class="phone-icon"><i class="fa fa-phone"></i> +977-9898989998</span>
+                    </p>
+                </nav>
+        </header>
+<!-- Slider Section......................................... -->
+        <div class="slider-container">
+            <div class="slider">
+
+            <input type="radio" name="images" id="i1" checked>
+            <input type="radio" name="images" id="i2">
+            <input type="radio" name="images" id="i3">
+
+            <div class="slide-image" id="img1">
+                <img src="./img//image-1.jpg" alt="">
+                <div class="contents">
+                    <h2>Horticulture</h2>
+                    <hr>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
+                        ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                        aliquip ex ea commodo consequat. </p>
+                    <div class="button-div">
+                        <a href="#" class="aBtn">View Product</a>
+                        <p>
+                            <span><i class="fa fa-play"></i></span>
+                            <a href="#">Watch Video</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- <label for="i3" class="prev"><span><i class="fa fa-angle-left"></i></span></label>
+                <label for="i2" class="next"><span><i class="fa fa-angle-right"></i></span></label> -->
+            </div>
+            <div class="slide-image" id="img2">
+                <img src="./img//image-2.jpg" alt="">
+                <div class="contents">
+                    <h2>Viticulture</h2>
+                    <hr>
+                    <h3>Vivamus ac tellus egestas, convallis metus nec, hendrerit dui.</h3>
+                    <p>Pellentesque venenatis mi congue, facilisis tellus sit amet, 
+                        aliquam felis. In rutrum vestibulum quam a sodales. Nam facilisis at nisi sed sodales. 
+                        Maecenas fermentum non nisi pharetra placerat. Nunc purus urna, suscipit eget elit sit amet, 
+                        tristique pretium purus.</p>
+                    <div class="button-div">
+                        <a href="#" class="aBtn">View Product</a>
+                        <p>
+                            <span><i class="fa fa-play"></i></span>
+                            <a href="#">Watch Video</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- <label for="i1" class="prev"><span><i class="fa fa-angle-left"></i></span></label>
+                <label for="i3" class="next"><span><i class="fa fa-angle-right"></i></span></label> -->
+            </div>
+            <div class="slide-image" id="img3">
+                <img src="./img//image-1.jpg" alt="">
+                <div class="contents">
+                    <h2>Company</h2>
+                    <hr>
+                    <h3>Suspendisse auctor mauris ut justo fringilla, ut suscipit elit lobortis.</h3>
+                    <p>Aliquam erat volutpat. Mauris at mattis purus, 
+                        vel hendrerit velit. Sed placerat, dolor non gravida viverra, 
+                        massa ligula tempus lorem, vel varius nulla justo sit amet eros. 
+                        Sed id erat massa. Nulla non massa enim.</p>
+                    <div class="button-div">
+                        <a href="#" class="aBtn">View Product</a>
+                        <p>
+                            <span><i class="fa fa-play"></i></span>
+                            <a href="#">Watch Video</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- <label for="i2" class="prev"><span><i class="fa fa-angle-left"></i></span></label>
+                <label for="i1" class="next"><span><i class="fa fa-angle-right"></i></span></label> -->
+            </div>
+            <div class="dots-container">
+                <label for="i1" class="dots" id="dot1"></label>
+                <label for="i2" class="dots" id="dot2"></label>
+                <label for="i3" class="dots" id="dot3"></label>
+            </div>
+            </div>
+            <div class="services">
+                <p class="service">
+                    <i class="fa fa-shield"></i>
+                    <span>Safeguard Against Risk</span>
+                </p>
+                <p class="service">
+                    <i class="fa fa-truck"></i>
+                    <span>1-2 Weeks Delivery</span>
+                </p>
+                <p class="service">
+                    <i class="fa fa-shopping-bag"></i>
+                    <span>Largest Range Always In Stock </span>
+                </p>
+                <p class="service">
+                    <i class="fa fa-user"></i>
+                    <span>On-Site Specialists</span>
+                </p>
+                <p class="service">
+                    <i class="fa fa-home"></i>
+                    <span>Trustable Dealers</span>
+                </p>
+            </div>
+        </div>
+<!-- Map Section............................... -->
+        <div class="map-section">
+            <div class="map">
+                <img src="./img/google-map.jpeg" alt="">
+            </div>
+            <div class="search-dealer">
+                <div class="search-dealer-container">
+                    <h2>Find your nearest equipment dealer</h2>
+                    <p>FSR Group Ltd is a family owned company located in Marlborough</p>
+                    <p class="search-bar"> 
+                        <span class="map-marker"><i class="fa fa-map-marker"></i></span>
+                        <input type="search" value="" name="input" placeholder="type your post code here">
+                        <span class="search-input">
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="find-parts">
+            <div class="parts-img">
+                <img src="./img/note-taking.jpeg" alt="">
+            </div>
+            <div class="find-parts-contents">
+                <p class="find-part-heading">find parts</p>
+                <h3>Looking for your spareparts? ,<br>We've got covered you!</h3>
+                <p>If your company alresdy exists, then either in your inbox or your head of customer service's
+                    inbox there will be plenty of questions to get you started.
+                </p>
+                <a href="#" class="aBtn">Find your parts</a>
+            </div>
+        </div>
+        <div class="faqs">
+            <h2>frequently asked questions</h2>
+            <p class="search-bar"> 
+                <input type="search" value="" name="input" placeholder="type your post code here">
+                <span class="search-input"><i class="fa fa-search"></i></span>
+            </p>
+            <div class="accordian">
+                <ul>
+                    <li>
+                        <input type="checkbox" id="list-item-1" checked>
+                        <label for="list-item-1" class="forst-item">What is an FAQ page?</label>
+                        <p>FAQ stands for "Frequently Asked Question". FAQ is a list of frequently asked questions and
+                            answers useful for the users.</p>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="list-item-2">
+                        <label for="list-item-2" class="forst-item">When is an FAQ page appropriate?</label>
+                        <p>If you are considering to create a FAQ page for your users, that's 
+                            great, because it always helps client to know their queries.</p>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="list-item-3">
+                        <label for="list-item-3" class="forst-item">How to make an FAQ page?</label>
+                        <p>FAQ's are useful for different multiple purpose.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact-now">
+        <div class=" overlay">
+            <div class="contact-head">
+                <p>Can't find what you're looking for? <span>Reach out to our Experts!</span></p>
+                <a href="#" class="aBtn">contact now</a>
+            </div>
+            <div class="contact-contents">
+                <div class="contact-decor-image">
+                    <img src="./img/note-taking.jpeg" alt="">
+                </div>
+                <div class="content-list">
+                    <h2>Still Confused? Trach out to us<br>using following methods</h2>
+                    <p>If your company alresdy exists, then either in your inbox or your head of customer service's
+                        inbox there will be plenty of questions to get you started.</p>
+                    <div class="contact-button">
+                        <a href="#" class="aBtn">schedule a meeting</a>
+                        <a href="./Auth/register.html" class="aBtn requestCallback">request a callback</a>
+                    </div>
+                    <div class="attender-name">
+                        <hr>
+                        <p><span>Hareram Yadav,</span>Front-End Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Footer Section................................... -->
+        <div class="footer">
+            <div class="contactUs-sec">
+                <p>
+                    <i class="fa fa-phone"></i><span>123 030 430</span>
+                </p>
+                <p>
+                    <i class="fa fa-envelope-open"></i><span>info@abcd.com</span>
+                </p>
+                <p>
+                    <i class="fa fa-clock-o"></i><span>Mon - Fri | 8AM - 5PM</span>
+                </p>
+                <p>
+                    <i class="fa fa-map-marker"></i><span>111 Ferries McDonald Rd, Monarto South WA 4543 </span>
+                </p>
+                <img src="./img/google-map.jpeg" alt="">
+            </div>
+            <div class="our-services-footer">
+                <div class="footer-section-services">
+                    <ul>
+                        <li>Company</li>
+                        <li><a href="#">Request Call back</a></li>
+                        <li><a href="#">book a consultation</a></li>
+                        <li><a href="#">Find a dealet</a></li>
+                        <li><a href="#">latest news</a></li>
+                        <li><a href="#">find parts</a></li>
+                    </ul>
+                    <ul>
+                        <li>Horticulture</li>
+                        <li><a href="#">spraying</a></li>
+                        <li><a href="#">canopy management</a></li>
+                        <li><a href="#">floor management</a></li>
+                        <li><a href="#">harvesting</a></li>
+                    </ul>
+                    <ul>
+                        <li>Viticulture</li>
+                        <li><a href="#">spraying</a></li>
+                        <li><a href="#">canopy management</a></li>
+                        <li><a href="#">floor management</a></li>
+                        <li><a href="#">harvesting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section-services">
+                    <ul>
+                        <li>Resources</li>
+                        <li><a href="#">Video gallery</a></li>
+                        <li><a href="#">image gallery</a></li>
+                        <li><a href="#">brochure gallery</a></li>
+                        <li><a href="#">manuals</a></li>
+                        <li><a href="#">faqs</a></li>
+                    </ul>
+                    <ul>
+                        <li>Other Links</li>
+                        <li><a href="#">Terms & conditions</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">contact us</a></li>
+                        <li><a href="#">subscribe to newsletter</a></li>
+                    </ul>
+                    <ul>
+                        <li>Follow Us</li>
+                        <li><a href="#">facebook</a></li>
+                        <li><a href="#">twitter</a></li>
+                        <li><a href="#">linkedIn</a></li>
+                        <li><a href="#"></a>YouTube</li>
+                        <li><a href="#">vimeo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-section">
+            <p>By <span>Hareram yadav</span></p>
+        </div>
+    </div>
+</body>
+</html>
