@@ -565,6 +565,7 @@ ul p {
 }
 .contact-head a {
   margin: auto;
+  width: 20%;
 }
 .contact-contents {
   display: flex;
@@ -696,6 +697,11 @@ ul p {
     display: none;
   }
   /* Slider Section................................. */
+  .slide-image .contents {
+    width: 50%;
+    height: 600px;
+    padding: 0px 50px 0px 20px;
+  }
   .services p {
     font-size: 10px;
     margin-left: 3px;
@@ -709,8 +715,8 @@ ul p {
     margin-right: 3px;
     margin-left: 0px;
   }
-  /* .slide-image .contents h2 {
-    margin-top: 150px;
+  .slide-image .contents h2 {
+    margin-top: 100px;
     font-size: var(--mheading);
   }
   .slide-image .contents hr {
@@ -727,15 +733,15 @@ ul p {
   }
   .button-div {
     display: flex;
+    flex-direction: column;
     margin-top: 40px;
   }
-  .button-div p {
-    margin-left: 30px;
+  .button-div a {
+    width: 40%;
   }
-  .dots-container {
-    text-align: center;
-    margin: auto;
-  } */
+  .button-div p span {
+    margin-right: 10px;
+  }
   /* Map Section............................... */
   .search-dealer {
     margin: auto 30px;
@@ -779,6 +785,9 @@ ul p {
   /* Contact now section.................... */
   .contact-head {
     padding: 5px 5px;
+  }
+  .contact-head a {
+    width: 40%;
   }
   .contact-head p {
     font-size: var(--mheading);
